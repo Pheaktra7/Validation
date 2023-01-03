@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(172, 165, 155);
+    font-family: arial;
+}
+
+.container{
+    background-color: #eee;
+    width: 500px;
+}
+
+.container .header {
+    width: 100%;
+    padding: 20px 30px;
+    font-size: 24px;
+    border-bottom: 1px solid #000;
+}
+
+.container .form {
+    padding: 20px 30px;
+}
+
+.container .form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+    position: relative;
+}
+
+.container .form .form-group label {
+    margin-bottom: 15px;
+}
+
+.container .form .form-group input{
+    width: 100%;
+    display: block;
+    padding: 12px;
+    border-radius: 7px;
+    border: 2px solid #333;
+}
+
+.container .form .form-group input:focus {
+    border: 1px solid #616D7E;
+    outline: 0;
+}
+
+.container .form .form-group i {
+    position: absolute;
+    visibility: hidden;
+    top: 48%;
+    right: 10px;
+}
+
+.container .form .form-group.success input {
+    border-color: #66CDAA;
+}
+
+.container .form .form-group.error input {
+    border-color: #E55451;
+}
+
+.container .form .form-group.success i.fa-circle-check {
+    visibility: visible;
+    color: #66CDAA;
+}
+
+.container .form .form-group.error i.fa-circle-exclamation {
+    visibility: visible;
+    color: #E55451;
+}
+
+.container .form .form-group small {
+    margin-top: 7px;
+    visibility: hidden;
+    color: #E55451;
+}
+
+.container .form .form-group.error small {
+    visibility: visible;
+}
+
+.container .form button {
+    width: 100%;
+    display: block;
+    border: none;
+    background-color: #66CDAA;
+    padding: 12px 0px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
